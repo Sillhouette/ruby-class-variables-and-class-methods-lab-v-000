@@ -28,4 +28,10 @@ class Song
     @@genres.uniq;
   end
 
+  def self.genre_count
+    genre_hash = {};
+    @@genres.map{|genre| genre_hash.has_key?(genre) ? genre_hash[genre]++ : genre_hash[genre] = 1}
+    return genre_hash;
+  end
+
 end
