@@ -34,4 +34,10 @@ class Song
     return genre_hash;
   end
 
+  def self.artist_count
+    artist_hash = {};
+    @@artists.map{|genre| artist_hash.has_key?(artist) ? artist_hash[artist] += 1 : artist_hash[artist] = 1}
+    return artist_hash;
+  end
+
 end
