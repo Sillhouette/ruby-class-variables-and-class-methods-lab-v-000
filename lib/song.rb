@@ -2,7 +2,7 @@ class Song
 
   attr_reader :name, :artist, :genre
 
-  @@count == 0;
+  @@album_count == 0;
   @@artists = 0;
   @@genres = 0;
 
